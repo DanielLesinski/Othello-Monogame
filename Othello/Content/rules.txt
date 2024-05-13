@@ -1,0 +1,12 @@
+The game starts the player with the black disc.
+In the game, we make moves that can be used to obtain our opponent's discs.
+Other types of moves are not allowed. To capture the opponent's disks,
+we need to surround him with our own disks in a straight line in any direction.
+All the pieces we have surrounded are changed to our color.
+Players take turns making moves. If a player has no legal move, he loses his turn.
+The game ends when the entire board is filled or no player can make any allowed move.
+The player who occupied more squares on the board wins.
+
+Control:
+-Use LMB to make a move
+-Hold RMB to see possible moves
