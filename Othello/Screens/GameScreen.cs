@@ -28,6 +28,7 @@ public class GameScreen
 	private bool _isGameOver;
 	private bool _isSearchingMove;
 	private AlphaBeta _ab;
+	private ButtonState _previousMouseState = ButtonState.Released;
 	
 	public bool IsAI {get; set;}
 	
@@ -103,7 +104,7 @@ public class GameScreen
 				if(mouseState.RightButton == ButtonState.Released)
 					_hint = false;
 				
-				if (mouseState.LeftButton == ButtonState.Pressed)
+				if (_previousMouseState == ButtonState.Pressed && mouseState.LeftButton == ButtonState.Released)
 				{
 					// Konwertowanie pozycji myszy na indeksy pola na planszy
 					float mouseX = mouseState.X;
@@ -129,6 +130,8 @@ public class GameScreen
 						}
 					}
 				}
+				
+				_previousMouseState = mouseState.LeftButton;
 			}
 		}
 		
