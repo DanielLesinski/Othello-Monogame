@@ -1,3 +1,3 @@
 ﻿
-using var game = new Othello.Game1();
+using var game = new Othello.OthelloGame();
 game.Run();
