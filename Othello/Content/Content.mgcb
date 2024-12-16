@@ -74,6 +74,9 @@
 /processorParam:TextureFormat=Color
 /build:pvpButton.png
 
+#begin rules.txt
+/copy:rules.txt
+
 #begin rulesButton.png
 /importer:TextureImporter
 /processor:TextureProcessor
