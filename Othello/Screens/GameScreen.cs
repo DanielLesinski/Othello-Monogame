@@ -157,7 +157,8 @@ public class GameScreen
 				{
 					int x = 300 + i * _tileSize;
 					int y = 50 + j * _tileSize;
-					spriteBatch.Draw(_disc, new Rectangle(x+35, y+35, 30, 30), Color.Green * 0.45f);
+					//spriteBatch.Draw(_disc, new Rectangle(x+35, y+35, 30, 30), Color.Green * 0.45f);
+					spriteBatch.Draw(_pixelTexture, new Rectangle(x+1, y+1, 97, 97), Color.Green * 0.45f);
 				}
 
 				int player = _board.GetPosition(i, j);
