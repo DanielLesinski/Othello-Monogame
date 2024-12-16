@@ -11,7 +11,7 @@ public enum GameState
 	Rules,
 }
 	
-public class Game1 : Game
+public class OthelloGame : Game
 {
 	private GraphicsDeviceManager _graphics;
 	private SpriteBatch _spriteBatch;
@@ -22,7 +22,7 @@ public class Game1 : Game
 	private RulesScreen _rulesScreen;
 	private bool _isPressed;
 
-	public Game1()
+	public OthelloGame()
 	{
 		_graphics = new GraphicsDeviceManager(this);
 		Content.RootDirectory = "Content";

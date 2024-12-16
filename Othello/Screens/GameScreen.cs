@@ -11,23 +11,23 @@ namespace Othello;
 
 public class GameScreen
 {
-	Texture2D _boardTexture;
-	Texture2D _disc;
-	SpriteFont _font;
-	SoundEffect _effect;
-	Texture2D _pixelTexture;
+	private Texture2D _boardTexture;
+	private Texture2D _disc;
+	private SpriteFont _font;
+	private SoundEffect _effect;
+	private Texture2D _pixelTexture;
 	
-	int _tileSize;
-	Board _board;
-	Player _whitePlayer;
-	Player _blackPlayer;
-	Player _activePlayer;
-	List<(int,int)> _moves;
-	bool _hint;
-	bool _isMoveDone;
-	bool _isGameOver;
+	private int _tileSize;
+	private Board _board;
+	private Player _whitePlayer;
+	private Player _blackPlayer;
+	private Player _activePlayer;
+	private List<(int,int)> _moves;
+	private bool _hint;
+	private bool _isMoveDone;
+	private bool _isGameOver;
 	private bool _isSearchingMove;
-	AlphaBeta _ab;
+	private AlphaBeta _ab;
 	
 	public bool IsAI {get; set;}
 	

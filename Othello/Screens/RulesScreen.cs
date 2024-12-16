@@ -7,9 +7,9 @@ namespace Othello;
 
 public class RulesScreen
 {
-	SpriteFont _font;
-	Texture2D _pixelTexture;
-	string _text;
+	private SpriteFont _font;
+	private Texture2D _pixelTexture;
+	private string _text;
 	
 	public void LoadContent(ContentManager content,  GraphicsDevice graphics)
 	{
